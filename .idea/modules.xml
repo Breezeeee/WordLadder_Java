@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/javaproj.iml" filepath="$PROJECT_DIR$/javaproj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wordladder.iml" filepath="$PROJECT_DIR$/.idea/modules/wordladder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wordladder_main.iml" filepath="$PROJECT_DIR$/.idea/modules/wordladder_main.iml" group="wordladder" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wordladder_test.iml" filepath="$PROJECT_DIR$/.idea/modules/wordladder_test.iml" group="wordladder" />
     </modules>
   </component>
 </project>
