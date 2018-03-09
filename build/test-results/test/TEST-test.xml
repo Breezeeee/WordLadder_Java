@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-03-07T06:35:20" hostname="PC201606271218" time="0.001">
+<testsuite name="test" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-03-09T06:13:54" hostname="PC201606271218" time="1.06">
   <properties/>
-  <testcase name="add" classname="test" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="wordladder" classname="test" time="0.944"/>
+  <testcase name="read_Dictionary" classname="test" time="0.0"/>
+  <system-out><![CDATA[Unable to open that file.  Try again.
+A ladder from data back to code:
+A ladder from play back to work:
+A ladder from awake back to sleep:
+No word ladder found from azure back to metal.
+Unable to open that file.  Try again.
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -37,7 +37,7 @@ public class main {
             }
             else {
 //            System.out.println(word1 + "    " + word2);
-                wordladder(word1, word2, dictionary);
+            System.out.println(wordladder(word1, word2, dictionary));
             }
         }
         System.out.println("Have a nice day.");
@@ -75,7 +75,8 @@ public class main {
         return tmp_dictionary;
     }
 
-    public static void wordladder(String word1, String word2, HashSet dictionary){
+    public static String wordladder(String word1, String word2, HashSet dictionary){
+        StringBuffer res = new StringBuffer();
         LinkedBlockingQueue<Stack<String>> ladders = new LinkedBlockingQueue<Stack<String>>();
         Stack<String> W1 = new Stack<String>(), W2 = new Stack<String>() ;
         String w1, w2;
@@ -102,12 +103,10 @@ public class main {
                                     find = true;
                                     W2.push(w2);
                                     System.out.println("A ladder from " + word2 + " back to " + word1 + ":" );
-                                    StringBuffer res = new StringBuffer();
                                     while (!W2.isEmpty()) {
                                         res.append(W2.pop());
                                         res.append(' ');
                                     }
-                                    System.out.println(res);
                                 }
                                 if (dictionary.contains(w2)) {
                                     W2.push(w2);
@@ -122,5 +121,6 @@ public class main {
         }
         if (!find)
             System.out.println("No word ladder found from " + word2 + " back to " + word1 + ".");
+        return res.toString();
     }
 }
