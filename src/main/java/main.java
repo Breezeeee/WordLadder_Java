@@ -24,8 +24,6 @@ public class main {
             if(word1.length() == 0) break;
             word2 = get_Word(2);
             if(word2.length() == 0) break;
-            word1 = word1.toLowerCase();
-            word2 = word2.toLowerCase();
             if(word1.length() != word2.length()) {
                 System.out.println("The two words must be the same length.");
             }
@@ -46,7 +44,9 @@ public class main {
     public static String get_Word(int word_number){
         System.out.println("Word #" + word_number + " (or Enter to quit): ");
         Scanner scanner1 = new Scanner(System.in);
-        return scanner1.nextLine();
+        String word = scanner1.nextLine();
+        word = word.toLowerCase();
+        return word;
     }
 
     public static HashSet read_Dictionary(String Dictionary_name) {
